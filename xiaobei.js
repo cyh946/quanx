@@ -16,15 +16,11 @@ hostname = api.xiaobeiyangji.com
 
 let obj = JSON.parse($response.body);
 
-if (obj.code === 200 ) {
-    obj.vipType = "year";
-    obj.vipEndTime = "2222-05-20 13:14:00";
-    obj.isYear = true;
-    obj.isExpire = false;
-}
+obj = {"isExpire":false,"surplus":{"milliseconds":0,"seconds":29,"minutes":49,"hours":22,"days":6,"months":0,"years":0},"freeMine":0,"isYear":true,"vipEndTime":"2222-05-20 13:14:00","vipType":"year"}
 
 
 $done({body: JSON.stringify(obj)});
+
 
 
 
