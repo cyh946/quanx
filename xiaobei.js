@@ -20,8 +20,10 @@ if (obj.code === 200 && obj.data) {
     obj.vipType = "year";
     obj.vipEndTime = "2222-05-20 13:14:00";
     obj.isYear = true;
+    obj.isExpire = false;
 }
 
 
 $done({body: JSON.stringify(obj)});
+
 
