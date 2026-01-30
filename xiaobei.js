@@ -1,3 +1,6 @@
+/*
+ *
+ *
 [rewrite_local]
 # > 小贝基金
 ^https?:\/\/api\.xiaobeiyangji\.com\/yangji-api\/api\/to-vip-invitation url script-response-body https://raw.githubusercontent.com/cyh946/quanx/refs/heads/main/xiaobei.js
@@ -31,6 +34,7 @@ const customResponse = {
 };
 // 输出JSON响应体（圈X会自动将此输出作为接口响应）
 $done({ body: JSON.stringify(customResponse) });
+
 
 
 
