@@ -1,5 +1,5 @@
 [rewrite_local]
-# > 读手表-insight
+# > 小贝基金
 ^https:\/\/api\.xiaobeiyangji\.com\/yangji-api\/api\/to-vip-invitation url script-response-body https://raw.githubusercontent.com/cyh946/quanx/refs/heads/main/xiaobei.js
 
 [mitm]
@@ -24,3 +24,4 @@ if (obj.code === 200 && obj.data) {
 
 
 $done({body: JSON.stringify(obj)});
+
