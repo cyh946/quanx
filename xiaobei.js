@@ -1,6 +1,6 @@
 [rewrite_local]
 # > 小贝基金
-^https:\/\/api\.xiaobeiyangji\.com\/yangji-api\/api\/to-vip-invitation\/ url script-response-body https://raw.githubusercontent.com/cyh946/quanx/refs/heads/main/xiaobei.js
+^https:\/\/api\.xiaobeiyangji\.com\/yangji-api\/api\/to-vip-invitation url script-response-body https://raw.githubusercontent.com/cyh946/quanx/refs/heads/main/xiaobei.js
 
 [mitm]
 hostname = api.xiaobeiyangji.com
@@ -20,6 +20,7 @@ obj = {"isExpire":false,"surplus":{"milliseconds":0,"seconds":29,"minutes":49,"h
 
 
 $done({body: JSON.stringify(obj)});
+
 
 
 
